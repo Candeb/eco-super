@@ -13,7 +13,7 @@ const imageUrls = [
     { src: greengrocery, text: "Verdulería" },
     { src: bakery, text: "Panadería" },
     { src: greengrocery, text: "Verdulería" },
-   
+
 ];
 
 
@@ -32,7 +32,12 @@ const Features = () => {
                 </div>
 
                 <p className='features-content-2-subtitle'> y conocé nuestras ofertas semanales</p>
-                <button className='features-content-2-btn'>Ver Canal</button>
+                <button
+                    className="features-content-2-btn"
+                    onClick={() => window.open('https://chat.whatsapp.com/Hga4GAoIXDIBVnYesxZxah', '_blank')}
+                >
+                    Ver Canal
+                </button>
 
             </div>
         </div>

@@ -25,8 +25,7 @@
 }
 
 
-.header-nav-links,
-.header-nav-links a {
+.header-nav-links {
     position: relative;
     cursor: pointer;
         text-align: center;
@@ -34,8 +33,13 @@
     display: flex;
     width: 250px;
         border-right: 2px solid white;
-        color: white;text-decoration: none
 ;
+}
+
+.header-nav-links a {
+            color: white;
+            text-decoration: none
+
 }
 
 .header-nav-links:last-child {
