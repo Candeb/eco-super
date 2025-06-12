@@ -1,27 +1,27 @@
 import React from 'react'
-import bakery from "../../assets/products-slider/1.png"
-import greengrocery from "../../assets/products-slider/2.png"
-import wspIcon from "../../assets/wsp-icon.png"
+import { LuRefrigerator } from "react-icons/lu"; import wspIcon from "../../assets/wsp-icon.png"
 import ImageCarousel from '../ImageCarousel/ImageCarousel';
 import "./Features.css"
+import { RiToolsFill } from "react-icons/ri";
+import { FaHeadphones } from "react-icons/fa6";
+import { TbWashMachine } from "react-icons/tb"; import { FaTv } from "react-icons/fa"; import { LiaBedSolid } from "react-icons/lia";
 
-
-const imageUrls = [
-    { src: bakery, text: "Panadería" },
-    { src: greengrocery, text: "Verdulería" },
-    { src: bakery, text: "Panadería" },
-    { src: greengrocery, text: "Verdulería" },
-    { src: bakery, text: "Panadería" },
-    { src: greengrocery, text: "Verdulería" },
-
+const icons = [
+    { icon: <LuRefrigerator />, text: "Heladeras y Frezzer" },
+    { icon: <FaHeadphones />, text: "Audio" },
+    { icon: <FaTv />, text: "Video" },
+    { icon: <RiToolsFill />, text: "Herramientas" },
+    { icon: <TbWashMachine />, text: "Electrodomésticos" },
+    { icon: <LiaBedSolid />, text: "Muebles" },
 ];
+
 
 
 const Features = () => {
     return (
         <div className='features-container'>
             <div className='features-content-1'>
-                <ImageCarousel images={imageUrls} />
+                <ImageCarousel images={icons} />
 
             </div>
 

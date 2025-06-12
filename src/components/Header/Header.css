@@ -13,7 +13,7 @@
 .header-container-logo {}
 
 .header-logo-img {
-    width: 130px;
+    width: 180px;
 }
 
 .header-nav {
@@ -32,7 +32,7 @@
     justify-content: center;
     display: flex;
     width: 250px;
-        border-right: 2px solid white;
+        border-right: 2px solid white;   transition: font-weight 0.3s ease;
 ;
 }
 
@@ -59,8 +59,10 @@
 }
 
 .header-nav-links:hover .dropdown-menu {
-    display: block;    border-radius: 0 0 12px 12px;
+    display: block;    border-radius: 0 0 12px 12px;    
 }
+
+
 
 .dropdown-menu li {
     padding: 0.6rem 0;

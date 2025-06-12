@@ -10,7 +10,8 @@ const Hero = () => {
             <img src={phoneImage} alt="" />
         </div>
         <div className='hero-text-container'>
-          <h4 className='hero-title'>Pedidos Online</h4>
+          <h4 className='hero-title'>TODO
+             ELECTRO</h4>
           <p className='hero-subtitle'>
             Retira tu pedido preparado y ahorrá tiempo 
           </p>

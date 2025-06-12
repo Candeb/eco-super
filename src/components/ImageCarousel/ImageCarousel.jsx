@@ -64,28 +64,32 @@ const ImageCarousel = ({ images }) => {
             </div>
 
             <div className="carousel-track" ref={carouselRef}>
-                {infiniteImages.map((img, idx) => {
-                    const imageSrc = typeof img === "string" ? img : img.src;
-                    const imageText = typeof img === "object" && img.text ? img.text : null;
+                {infiniteImages.map((item, idx) => {
+                    const imageSrc = typeof item === "string" ? item : item.src;
+                    const imageText = typeof item === "object" && item.text ? item.text : null;
+                    const icon = typeof item === "object" && item.icon ? item.icon : null;
 
                     return (
-                        <div className="carousel-card-image" >
+                        <div className="carousel-card-image" key={idx}>
                             <div
-                                key={idx}
-                               className="carousel-image-wrapper"
+                                className="carousel-image-wrapper"
                                 onMouseEnter={() => handleImageHover(true)}
                                 onMouseLeave={() => handleImageHover(false)}
                             >
-                                <img src={imageSrc} alt={`carousel-${idx}`} className="carousel-image" />
-
+                                {icon ? (
+                                    <div className="carousel-icon">
+                                        {icon}
+                                    </div>
+                                ) : (
+                                    <img src={imageSrc} alt={`carousel-${idx}`} className="carousel-image" />
+                                )}
                             </div>
-                            
-                             {imageText && <div className="carousel-image-text">{imageText}</div>}
 
+                            {imageText && <div className="carousel-image-text">{imageText}</div>}
                         </div>
-
                     );
                 })}
+
 
             </div>
 
