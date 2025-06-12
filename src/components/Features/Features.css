@@ -1,0 +1,87 @@
+.features-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.features-content-1 {
+    padding: 6rem 5rem;
+
+}
+
+.features-content-2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  overflow: hidden;
+  z-index: 0;
+  color: white; 
+}
+.features-content-2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(/src/assets/features-img-wsp.jpg);
+  background-size: cover;
+  background-position: bottom;
+  filter: blur(4px);
+  transform: scale(1.05); 
+  z-index: -1; 
+}
+
+
+.features-content-2-container-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.features-content-2-container-title img {
+    width: 150px;
+}
+
+.features-content-2-title {
+    color: white;
+    font-size: 3rem;
+    width: 45%;
+}
+
+.features-content-2-subtitle {
+    color: white;
+    font-size: 2rem;
+}
+
+.features-content-2-btn {
+    padding: 1rem 2rem;
+    border-radius: 16px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+    font-size: 16px;
+      font-family: "Montserrat", sans-serif;
+  border: none;
+  background: #021686;
+  color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0px 4px 0px #000c50;
+
+}
+
+
+
+
+.features-content-2-btn:hover {
+    transform: translateY(2px);
+    box-shadow: 0px 2px 0px #000c50;
+}
+
+.features-content-2-btn:active {
+    transform: translateY(4px);
+    box-shadow: 0px 0px 0px #000c50;
+}
