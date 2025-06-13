@@ -6,32 +6,43 @@
 }
 
 .features-content-1 {
-    padding: 6rem 5rem;     max-width: 1440px;
+    padding: 6rem 5rem;
+    max-width: 1440px;
     margin: 0 auto;
+    width: 100%;
 
+    @media (max-width: 1068px) {
+        padding: 2rem 1.5rem 1.5rem;
+    }
 }
 
 .features-content-2 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5rem;
-  overflow: hidden;
-  z-index: 0;
-  color: white; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    overflow: hidden;
+    z-index: 0;
+    color: white;
+
+    @media (max-width: 768px) {
+        padding: 2rem 1.5rem 1.5rem;
+        gap: 8px
+    }
 }
+
 .features-content-2::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url(/src/assets/features-img-wsp.jpg);
-  background-size: cover;
-  background-position: bottom;
-  filter: blur(4px);
-  transform: scale(1.05); 
-  z-index: -1; 
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/src/assets/features-img-wsp.jpg);
+    background-size: auto;
+    background-position: bottom;
+    filter: blur(4px);
+    transform: scale(1.05);
+    z-index: -1;
 }
 
 
@@ -44,17 +55,32 @@
 
 .features-content-2-container-title img {
     width: 150px;
+
+    @media (max-width: 768px) {
+        width: 75px;
+    }
 }
 
 .features-content-2-title {
     color: white;
     font-size: 3rem;
     width: 45%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        font-size: 20px;
+    }
 }
 
 .features-content-2-subtitle {
     color: white;
     font-size: 2rem;
+    text-align: center;
+
+    @media (max-width: 1068px) {
+
+        font-size: 16px;
+    }
 }
 
 .features-content-2-btn {
@@ -65,13 +91,13 @@
     letter-spacing: 1px;
     margin-top: 2rem;
     font-size: 16px;
-      font-family: "Montserrat", sans-serif;
-  border: none;
-  background: #021686;
-  color: white;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  box-shadow: 0px 4px 0px #000c50;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    background: #021686;
+    color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0px 4px 0px #000c50;
 
 }
 

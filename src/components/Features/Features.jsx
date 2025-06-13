@@ -7,7 +7,7 @@ import { FaHeadphones } from "react-icons/fa6";
 import { TbWashMachine } from "react-icons/tb"; import { FaTv } from "react-icons/fa"; import { LiaBedSolid } from "react-icons/lia";
 
 const icons = [
-    { icon: <LuRefrigerator />, text: "Heladeras y Frezzer" },
+    { icon: <LuRefrigerator />, text: "Heladeras" },
     { icon: <FaHeadphones />, text: "Audio" },
     { icon: <FaTv />, text: "Video" },
     { icon: <RiToolsFill />, text: "Herramientas" },

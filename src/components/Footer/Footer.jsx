@@ -6,11 +6,12 @@ import logo from '../../assets/logo-eco.png';
 
 const Footer = () => {
     return (
-        <>
+        
 
 
 
             <div className="footer">
+                <div className='footer-content'>
                 <div className="footer-left">
 
                     <div className="footer-info">
@@ -50,14 +51,15 @@ const Footer = () => {
             <div className='footer-end'>
                 <p>¿Necesitas ayuda? Visita <a href="#">Atención al Cliente</a> o comunicate por{' '}
                     <a href="#">WhatsApp</a>
-                    
+
                 </p>
                 <span>
                     © 2025 ECO Supermercado. Todos los derechos reservados.
                 </span>
             </div>
-        </>
 
+                </div>
+        
     );
 };
 
