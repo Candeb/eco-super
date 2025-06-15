@@ -6,25 +6,37 @@ import logo from '../../assets/logo-eco.png';
 
 const Footer = () => {
     return (
-        
 
 
 
-            <div className="footer">
-                <div className='footer-content'>
+
+        <div className="footer">
+            <div className='footer-content'>
                 <div className="footer-left">
 
                     <div className="footer-info">
                         <p><strong>ECO Supermercados San Rafael</strong></p>
-                        <ul className="footer-links">
-                            <li><a href="#">Ofertas</a></li>
-                            <li><a href="#">Pedidos Online</a></li>
-                            <li><a href="#">Contacto</a></li>
-                        </ul>
+
                         <div className="footer-socials">
-                            <a href="#" aria-label="Facebook"><FaFacebookF /></a>
-                            <a href="#" aria-label="Instagram"><FaInstagram /></a>
-                            <a href="#" aria-label="WhatsApp"><FaWhatsapp /></a>
+                            <a
+                                href="https://www.facebook.com/p/ECO-Supermercado-100063563831062/"
+                                aria-label="Facebook"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <FaFacebookF />
+                            </a>
+
+                            <a
+                                href="https://www.instagram.com/ecosupermercado.sanrafael/?utm_source=qr&igsh=MWdsY3ZiN2dqbzFkdQ%3D%3D"
+                                aria-label="Instagram"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <FaInstagram />
+                            </a>
+
+                            <a href="https://wa.me/542604684763" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><FaWhatsapp /></a>
                         </div>
 
 
@@ -49,8 +61,16 @@ const Footer = () => {
             </div>
 
             <div className='footer-end'>
-                <p>¿Necesitas ayuda? Visita <a href="#">Atención al Cliente</a> o comunicate por{' '}
-                    <a href="#">WhatsApp</a>
+                <p>¿Necesitas ayuda? Visita nuestro   {' '}
+                    <a href="https://chat.whatsapp.com/Hga4GAoIXDIBVnYesxZxah" target="_blank" rel="noopener noreferrer">
+                        Canal de ofertas   {' '}
+                    </a>
+
+                    o comunicate por{' '}
+                    <a href="https://wa.me/542604684763" target="_blank" rel="noopener noreferrer">
+                        WhatsApp
+                    </a>
+
 
                 </p>
                 <span>
@@ -58,8 +78,8 @@ const Footer = () => {
                 </span>
             </div>
 
-                </div>
-        
+        </div>
+
     );
 };
 

@@ -28,11 +28,7 @@ const Header = () => {
             <div className={`header-nav-container ${menuOpen ? 'open' : ''}`}>
                 <ul className='header-nav'>
                     <li className='header-nav-links'>
-                        <a
-                            href="https://chat.whatsapp.com/Hga4GAoIXDIBVnYesxZxah"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
+                        <a href="https://chat.whatsapp.com/Hga4GAoIXDIBVnYesxZxah" target="_blank" rel="noopener noreferrer">
                             Ofertas
                         </a>
                     </li>
