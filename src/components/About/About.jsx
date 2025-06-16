@@ -6,14 +6,15 @@ import ImageCarousel from '../ImageCarousel/ImageCarousel';
 import visa from "../../assets/payments-slider/1.png"
 import mastercard from "../../assets/payments-slider/2.png"
 import mp from "../../assets/payments-slider/3.png"
+import naranja from "../../assets/payments-slider/naranja.png"
 
 
 const imageUrls = [
+  { src: naranja, text: "Naranja X" },
+  { src: visa, text: "Visa" },
 
-    visa,
-    visa,
-    visa
 ];
+
 
 const About = () => {
     return (
