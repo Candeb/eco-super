@@ -14,6 +14,7 @@
 
     @media (max-width: 768px) {
         height: auto;
+        padding-bottom: 0;
     }
 }
 
@@ -34,9 +35,15 @@
     width: 100%;
 
     @media (max-width: 768px) {
-        gap: 3.5rem;
+        gap: 3rem;
         min-height: 80px;
     }
+
+     @media (max-width: 330px) {
+        gap: 2rem;
+      
+    }
+
 }
 
 .carousel-track::-webkit-scrollbar {
@@ -56,7 +63,8 @@
     gap: 1rem;
 
     @media (max-width: 1068px) {
-        height: auto;
+       min-height: 110px;
+        max-height: 130px; justify-content: flex-start;
     }
 }
 

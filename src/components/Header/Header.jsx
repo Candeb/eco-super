@@ -4,35 +4,32 @@ import './Header.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { FaFacebookF, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
-
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [submenuOpen, setSubmenuOpen] = useState({ pedidos: false, contacto: false });
     const [scrolled, setScrolled] = useState(false);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 0);
+        };
 
-useEffect(() => {
-    const handleScroll = () => {
-        setScrolled(window.scrollY > 0);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-}, []);
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
 
-useEffect(() => {
-    if (menuOpen) {
-        document.body.style.overflow = 'hidden';
-    } else {
-        document.body.style.overflow = 'auto';
-    }
+    useEffect(() => {
+        if (menuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
 
-    // Limpieza por seguridad
-    return () => {
-        document.body.style.overflow = 'auto';
-    };
-}, [menuOpen]);
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [menuOpen]);
 
 
     const toggleMenu = () => {
@@ -43,11 +40,20 @@ useEffect(() => {
         setSubmenuOpen((prev) => ({ ...prev, [key]: !prev[key] }));
     };
 
+    const handleMenuItemClick = (callback) => {
+        setMenuOpen(false);
+        if (callback) callback();
+    };
+
+
     return (
-    <div className={`header-container ${scrolled ? 'header-scrolled' : ''}`}>
+        <div className={`header-container ${scrolled ? 'header-scrolled' : ''}`}>
 
             <div className='header-logo-container'>
-                <img src={logo} alt="" className='header-logo-img' />
+                <img src={logo} alt="" onClick={() => {
+                    const home = document.getElementById("home");
+                    if (home) home.scrollIntoView({ behavior: "smooth" });
+                }} className='header-logo-img' />
             </div>
 
             <div className='hamburger-icon' onClick={toggleMenu}>
@@ -70,10 +76,10 @@ useEffect(() => {
 
                         Pedidos Online
                         <ul className={`dropdown-menu ${submenuOpen.pedidos ? 'show' : ''}`}>
-                            <li>Heladeras y Frezzer</li>
-                            <li>Audio y Video</li>
-                            <li>Electrodomésticos</li>
-                            <li>Ver Todos</li>
+                            <li onClick={() => handleMenuItemClick(() => window.location.href = 'https://secure.sig2k.com/webs/eco@sigma-ar.defaultKart/sigkart/3.1/')}>Heladeras y Frezzer</li>
+                            <li onClick={() => handleMenuItemClick(() => window.location.href = 'https://secure.sig2k.com/webs/eco@sigma-ar.defaultKart/sigkart/3.1/')}>Audio y Video</li>
+                            <li onClick={() => handleMenuItemClick(() => window.location.href = 'https://secure.sig2k.com/webs/eco@sigma-ar.defaultKart/sigkart/3.1/')}>Electrodomésticos</li>
+                            <li onClick={() => handleMenuItemClick(() => window.location.href = 'https://secure.sig2k.com/webs/eco@sigma-ar.defaultKart/sigkart/3.1/')}>Ver Todos</li>
                         </ul>
                     </li>
                     <li
@@ -85,13 +91,15 @@ useEffect(() => {
 
                         Contacto
                         <ul className={`dropdown-menu ${submenuOpen.contacto ? 'show' : ''}`}>
-                            <li>Dónde estamos</li>
-                            <li>Atención al cliente</li>
+                            <li><a href="#about" onClick={() => handleMenuItemClick()}>Dónde estamos</a></li>
+
+                            <li onClick={() => handleMenuItemClick(() => window.location.href = 'https://wa.me/542604684763')}>Atención al cliente</li>
                             <li>
                                 <a
                                     href="https://chat.whatsapp.com/Hga4GAoIXDIBVnYesxZxah"
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    onClick={() => handleMenuItemClick()}
                                 >
                                     Canal de ofertas
                                 </a>

@@ -24,7 +24,7 @@ const imageUrls = [
 
 const About = () => {
     return (
-        <div className="about-container">
+        <div className="about-container" id="about">
 
             {/* Ubicación */}
             <section className="about-section location-section">

@@ -1,8 +1,10 @@
 .hero-container {
       margin-top: 235px;
+        scroll-margin-top: 235px; 
 
        @media (max-width: 1068px) {
       margin-top: 100px;
+        scroll-margin-top: 100px;
   }
 }
 
