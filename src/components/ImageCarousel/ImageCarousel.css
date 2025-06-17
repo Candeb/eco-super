@@ -35,12 +35,12 @@
     width: 100%;
 
     @media (max-width: 768px) {
-        gap: 3rem;
+        gap: 3.5rem;
         min-height: 80px;
     }
 
      @media (max-width: 329px) {
-        gap: 2rem;
+        gap: 2.5rem;
       
     }
 
