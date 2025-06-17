@@ -34,7 +34,7 @@
     width: 100%;
 
     @media (max-width: 768px) {
-        gap: 3rem;
+        gap: 3.5rem;
         min-height: 80px;
     }
 }
