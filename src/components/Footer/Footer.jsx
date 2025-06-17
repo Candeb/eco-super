@@ -53,6 +53,10 @@ const Footer = () => {
                         src={logo}
                         alt="Eco Supermercados San Rafael"
                         className="footer-logo"
+                        onClick={() => {
+                            const home = document.getElementById("home");
+                            if (home) home.scrollIntoView({ behavior: "smooth" });
+                        }}
                     />
 
                 </div>
