@@ -18,7 +18,7 @@
 }
 
 .carousel-container:first-child {
- @media (max-width: 768px) {
+    @media (max-width: 768px) {
         height: 200px;
     }
 }
@@ -80,12 +80,11 @@
 }
 
 .carousel-image {
-    height: 100%;
     transition: box-shadow 0.3s ease;
     pointer-events: auto;
     opacity: 0.4;
-    max-width: 165px;
-    object-fit: cover;
+    width: 150px;
+    object-fit: contain;
     transition: opacity 0.5s ease;
 
     @media (max-width: 1068px) {

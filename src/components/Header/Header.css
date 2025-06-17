@@ -158,6 +158,7 @@
         transform: translateX(0);
         display: flex;
         justify-content: space-between;
+        padding-bottom: 4rem;
     }
 
     .header-nav {

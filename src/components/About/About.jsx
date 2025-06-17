@@ -6,12 +6,18 @@ import ImageCarousel from '../ImageCarousel/ImageCarousel';
 import visa from "../../assets/payments-slider/1.png"
 import mastercard from "../../assets/payments-slider/2.png"
 import mp from "../../assets/payments-slider/3.png"
-import naranja from "../../assets/payments-slider/naranja.png"
+import naranja from "../../assets/payments-slider/6.png"
+import americanex from "../../assets/payments-slider/4.png"
+import cabal from "../../assets/payments-slider/5.png"
 
 
 const imageUrls = [
   { src: naranja, text: "Naranja X" },
   { src: visa, text: "Visa" },
+  { src: mastercard, text: "Mastercard" },
+  { src: mp, text: "Mercado Pago" },
+  { src: americanex, text: "American Express" },
+  { src: cabal, text: "Cabal" },
 
 ];
 
