@@ -39,7 +39,7 @@
         min-height: 80px;
     }
 
-     @media (max-width: 330px) {
+     @media (max-width: 329px) {
         gap: 2rem;
       
     }
