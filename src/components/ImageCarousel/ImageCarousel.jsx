@@ -68,23 +68,31 @@ const ImageCarousel = ({ images }) => {
                     const imageSrc = typeof item === "string" ? item : item.src;
                     const imageText = typeof item === "object" && item.text ? item.text : null;
                     const icon = typeof item === "object" && item.icon ? item.icon : null;
+                    const url = typeof item === "object" && item.url ? item.url : null;
+
+                    const content = (
+                        <div
+                            className="carousel-image-wrapper"
+                            onMouseEnter={() => handleImageHover(true)}
+                            onMouseLeave={() => handleImageHover(false)}
+                        >
+                            {icon ? (
+                                <div className="carousel-icon">{icon}</div>
+                            ) : (
+                                <img src={imageSrc} alt={`carousel-${idx}`} className="carousel-image" />
+                            )}
+                        </div>
+                    );
 
                     return (
                         <div className="carousel-card-image" key={idx}>
-                            <div
-                                className="carousel-image-wrapper"
-                                onMouseEnter={() => handleImageHover(true)}
-                                onMouseLeave={() => handleImageHover(false)}
-                            >
-                                {icon ? (
-                                    <div className="carousel-icon">
-                                        {icon}
-                                    </div>
-                                ) : (
-                                    <img src={imageSrc} alt={`carousel-${idx}`} className="carousel-image" />
-                                )}
-                            </div>
-
+                            {url ? (
+                                <a href={url} className="carousel-link">
+                                    {content}
+                                </a>
+                            ) : (
+                                content
+                            )}
                             {imageText && <div className="carousel-image-text">{imageText}</div>}
                         </div>
                     );

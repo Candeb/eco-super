@@ -67,7 +67,7 @@ const Header = () => {
             <div className={`header-nav-container ${menuOpen ? 'open' : ''}`}>
                 <ul className='header-nav'>
                     <li className='header-nav-links'>
-                        <a href="https://chat.whatsapp.com/Hga4GAoIXDIBVnYesxZxah" target="_blank" rel="noopener noreferrer">
+                        <a href="https://chat.whatsapp.com/Hga4GAolXDIBVnYesxZxah" target="_blank" rel="noopener noreferrer">
                             Ofertas
                         </a>
                     </li>
@@ -80,9 +80,9 @@ const Header = () => {
 
                         Pedidos Online
                         <ul className={`dropdown-menu ${submenuOpen.pedidos ? 'show' : ''}`}>
-                            <li onClick={() => handleMenuItemClick(() => window.location.href = 'https://secure.sig2k.com/webs/eco@sigma-ar.defaultKart/sigkart/3.1/')}>Heladeras y Frezzer</li>
-                            <li onClick={() => handleMenuItemClick(() => window.location.href = 'https://secure.sig2k.com/webs/eco@sigma-ar.defaultKart/sigkart/3.1/')}>Audio y Video</li>
-                            <li onClick={() => handleMenuItemClick(() => window.location.href = 'https://secure.sig2k.com/webs/eco@sigma-ar.defaultKart/sigkart/3.1/')}>Electrodomésticos</li>
+                            <li onClick={() => handleMenuItemClick(() => window.location.href = 'https://secure.sig2k.com/webs/eco@sigma-ar.defaultKart/sigkart/3.1/?catego=RU0029&cateid=RU0029&vista=cuadricula&orden=&ver=')}>Heladeras y Frezzer</li>
+                            <li onClick={() => handleMenuItemClick(() => window.location.href = 'https://secure.sig2k.com/webs/eco@sigma-ar.defaultKart/sigkart/3.1/?catego=RU0035&cateid=RU0035&vista=cuadricula&orden=&ver=')}>Audio y Video</li>
+                            <li onClick={() => handleMenuItemClick(() => window.location.href = 'https://secure.sig2k.com/webs/eco@sigma-ar.defaultKart/sigkart/3.1/?catego=RU0030&cateid=RU0030&vista=cuadricula&orden=&ver=')}>Electrodomésticos</li>
                             <li onClick={() => handleMenuItemClick(() => window.location.href = 'https://secure.sig2k.com/webs/eco@sigma-ar.defaultKart/sigkart/3.1/')}>Ver Todos</li>
                         </ul>
                     </li>
@@ -100,7 +100,7 @@ const Header = () => {
                             <li onClick={() => handleMenuItemClick(() => window.location.href = 'https://wa.me/542604684763')}>Atención al cliente</li>
                             <li>
                                 <a
-                                    href="https://chat.whatsapp.com/Hga4GAoIXDIBVnYesxZxah"
+                                    href="https://chat.whatsapp.com/Hga4GAolXDIBVnYesxZxah"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     onClick={() => handleMenuItemClick()}

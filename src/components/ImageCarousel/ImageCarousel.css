@@ -70,7 +70,7 @@
 
 .carousel-image-wrapper {
     display: flex;
-    height: 160px;
+    height: 150px;
     overflow: hidden;
     box-shadow: 1px 1px 1px black;
     background-color: #021686;
@@ -162,7 +162,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 4;
-    font-size: 4.5rem;
+    font-size: 4rem;
     color: white;
     opacity: 0.4;
     transition: opacity 0.5s ease;

@@ -68,7 +68,7 @@ const Footer = () => {
 
             <div className='footer-end'>
                 <p>¿Necesitas ayuda? Visita nuestro   {' '}
-                    <a href="https://chat.whatsapp.com/Hga4GAoIXDIBVnYesxZxah" target="_blank" rel="noopener noreferrer">
+                    <a href="https://chat.whatsapp.com/Hga4GAolXDIBVnYesxZxah" target="_blank" rel="noopener noreferrer">
                         Canal de ofertas   {' '}
                     </a>
 
