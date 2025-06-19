@@ -50,10 +50,14 @@ const Header = () => {
         <div className={`header-container ${scrolled ? 'header-scrolled' : ''}`}>
 
             <div className='header-logo-container'>
-                <img src={logo} alt="" onClick={() => {
+                <img 
+                src={logo} 
+                alt="" 
+                onClick={() => {
                     const home = document.getElementById("home");
                     if (home) home.scrollIntoView({ behavior: "smooth" });
-                }} className='header-logo-img' />
+                }} 
+                className='header-logo-img' />
             </div>
 
             <div className='hamburger-icon' onClick={toggleMenu}>

@@ -15,7 +15,9 @@ const Footer = () => {
                 <div className="footer-left">
 
                     <div className="footer-info">
-                        <p><strong>ECO Supermercados San Rafael</strong></p>
+                        <p> ECO Supermercado </p>
+                        <p>Av. Juan B. Alberdi 1405</p>
+                        <p>San Rafael, Mendoza </p>
 
                         <div className="footer-socials">
                             <a
