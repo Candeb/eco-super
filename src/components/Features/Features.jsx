@@ -28,7 +28,7 @@ const Features = () => {
             <div className='features-content-2'>
                 <div className='features-content-2-container-title'>
                     <img src={wspIcon} alt="" />
-                    <h4 className='features-content-2-title'>Seguinos en nuestro canal de WhatsApp</h4>
+                    <h4 className='features-content-2-title'>Seguinos en WhatsApp</h4>
                 </div>
 
                 <p className='features-content-2-subtitle'> y conocé nuestras ofertas semanales</p>
@@ -36,7 +36,7 @@ const Features = () => {
                     className="features-content-2-btn"
                     onClick={() => window.open('https://chat.whatsapp.com/Hga4GAolXDIBVnYesxZxah', '_blank')}
                 >
-                    Ver Canal
+                    Ver Ofertas
                 </button>
 
             </div>

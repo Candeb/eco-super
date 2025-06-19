@@ -105,7 +105,7 @@ const Header = () => {
                                     rel="noopener noreferrer"
                                     onClick={() => handleMenuItemClick()}
                                 >
-                                    Canal de ofertas
+                                    Grupo de ofertas
                                 </a>
 
 

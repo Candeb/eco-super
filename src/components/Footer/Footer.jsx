@@ -69,10 +69,10 @@ const Footer = () => {
             <div className='footer-end'>
                 <p>¿Necesitas ayuda? Visita nuestro   {' '}
                     <a href="https://chat.whatsapp.com/Hga4GAolXDIBVnYesxZxah" target="_blank" rel="noopener noreferrer">
-                        Canal de ofertas   {' '}
+                        Grupo de ofertas
                     </a>
 
-                    o comunicate por{' '}
+                 {' '}   o comunicate por{' '}
                     <a href="https://wa.me/542604684763" target="_blank" rel="noopener noreferrer">
                         WhatsApp
                     </a>
